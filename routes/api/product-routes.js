@@ -5,10 +5,9 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 
 // get all products
 router.get('/', (req, res) => {
-  // find all products
+  // find all products and include associated Cat and Tag data
   Product.findAll({
-    // findall products including category and product tags
-    include: [
+      include: [
       { model: Category },
       { model: Tag, through: ProductTag, as: 'tags' },
     ],
@@ -25,7 +24,7 @@ router.get('/', (req, res) => {
 
 // get one product
 router.get('/:id', (req, res) => {
-  // find a single product by its `id`
+  // find a single product by its `id` include associated Cat and Tag data
   Product.findOne({
     where: {
       id: req.params.id,
@@ -36,7 +35,7 @@ router.get('/:id', (req, res) => {
     ],
   })
     .then((results) => {
-      // if no results, respond with 404 and inform user no results found for that ID
+      // if no results, respond with 404 and tell user nothing found for that ID
       if (!results) {
         res.status(404).json({
           message: `No results found with ID ${req.params.id} found. Please try again with a different ID.`,
@@ -134,14 +133,14 @@ router.delete('/:id', (req, res) => {
     },
   })
     .then((results) => {
-      // if no results, set status to 404 and inform user no results for that ID
+      // if no results, set status to 404 and tell user no results for that ID
       if (!results) {
         res.status(404).json({
           message: `No results found with ID ${req.params.id} found. Please try again with a different ID.`,
         });
         return;
       }
-      // else, respond with results
+
       res.json(results);
     })
     .catch((err) => {

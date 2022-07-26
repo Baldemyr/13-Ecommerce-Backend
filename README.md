@@ -28,5 +28,8 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete data in my database
 ```
 .
-##Image
+## Image
 ![13-pic1](https://user-images.githubusercontent.com/46965040/180901701-e09bad40-7eb0-4759-8b63-1046967be648.png)
+
+## Video of App in action
+https://drive.google.com/file/d/1j0m2zMzpi-53d2nIvsyhL0Se5tqSry_1/view?usp=sharing

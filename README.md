@@ -11,6 +11,15 @@ AS A manager at an internet retail company
 I WANT a back end for my e-commerce website that uses the latest technologies
 SO THAT my company can compete with other e-commerce companies
 ```
+## How to use
+
+1) Clone or copy repository to your desktop
+2) create a .env file with your credentials for the database
+3) Run "npm i" in terminal
+4) Run "npm run seed" in terminal
+5) Run "npm start"
+
+
 
 ## Acceptance Criteria
 

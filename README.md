@@ -16,9 +16,11 @@ SO THAT my company can compete with other e-commerce companies
 1) Clone or copy repository to your computer
 2) create a .env file with your credentials for the database
 3) Run "npm i" in terminal
-4) Run "npm run seed" in terminal
-5) Run "npm start" in terminal
-6) Manipulate and modify in Insomnia
+4) Run "mysql -u root -p" and then enter your password
+5) Run "mysql source ./db/schema.sql"
+6) Quit Mysql terminal and run "npm run seed" in terminal
+7) Run "npm start" in terminal
+8) Manipulate and modify in Insomnia
 
 
 

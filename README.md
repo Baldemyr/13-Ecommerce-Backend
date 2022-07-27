@@ -13,11 +13,12 @@ SO THAT my company can compete with other e-commerce companies
 ```
 ## How to use
 
-1) Clone or copy repository to your desktop
+1) Clone or copy repository to your computer
 2) create a .env file with your credentials for the database
 3) Run "npm i" in terminal
 4) Run "npm run seed" in terminal
-5) Run "npm start"
+5) Run "npm start" in terminal
+6) Manipulate and modify in Insomnia
 
 
 

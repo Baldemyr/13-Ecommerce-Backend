@@ -47,7 +47,7 @@ THEN I am able to successfully create, update, and delete data in my database
 
 Part 1
 
-https://drive.google.com/file/d/1EauiX8pCMDBORAErr8WHnmVs4MCj0JSw/view?usp=sharing
+[https://drive.google.com/file/d/1EauiX8pCMDBORAErr8WHnmVs4MCj0JSw/view?usp=sharing](https://drive.google.com/file/d/1ubxn8beJZ0kKje5uRR36mJ3n46lc8rYL/view?usp=sharing)
 
 Part 2
 
